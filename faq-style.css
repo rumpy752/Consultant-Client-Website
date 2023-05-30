@@ -1,0 +1,293 @@
+﻿/*
+   Style Sheet CSS for FAQ
+   Author: Jaime Rump
+   Date:  2023-02-28  
+
+   Filename: faq-style.css
+*/
+
+body {
+    margin: 0;
+    background-image: url("imageedit_4_9472769625.png");
+}
+
+/* Header elements */
+.header {
+    background-color: white;
+    display: flex;
+}
+
+#logo {
+    margin-left: 10px;
+    margin-top: 0;
+    padding: 0;
+    background-color: none;
+    display: flex;
+}
+
+.btn {
+    background-color: #ffba01;
+    float: right;
+    border: solid 5px white;
+    display: none;
+}
+
+.fas {
+    background-color: none;
+    color: white;
+    font-size: 22px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+#nav-menu {
+    position: fixed;
+    display: flex;
+    border-radius: 0 0 0 50px;
+    right: 0;
+    padding: 20px;
+    background-color: #ffba01;
+    z-index: 3;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 20px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: none;
+}
+
+#nav-menu ul {
+     list-style: none;
+     margin: 0;
+     padding: 0;
+     display: flex;
+     justify-content: center;
+}
+
+#nav-menu li {
+     margin-right: 1em;
+     margin-left: 50px;
+}
+
+#nav-menu > ul li:last-of-type {
+     text-decoration: underline solid rgb(255,255,255);
+}
+
+/* Q & A div elements */
+.qanda {
+    background-color: white;
+    margin: 55px;
+    padding: 40px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    letter-spacing: -0.2px;
+    word-spacing: 3.6px;
+    color: #011638;
+    font-weight: 400;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+}
+
+/* Footer elements styles */
+.footer-container {
+    background-color: #ffba01;
+    padding: 10px 0;
+    margin-top: 0px;
+    width: 100%;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 20px;
+    letter-spacing: -0.8px;
+    word-spacing: 0px;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: none;
+}
+
+#footerlist {
+    list-style: none;
+    margin-left: 60px;
+    line-height: 30px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col-6 {
+    width: 50%;
+    color: #fff;
+}
+
+.btn {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    letter-spacing: -0.8px;
+    word-spacing: 2px;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: none;
+}
+
+.newsletter-signup {
+    border: double orange 5px;
+    margin-right: 40px;
+    padding: 20px;
+    background-color: white;
+    color: black;
+    line-height: 30px;
+    text-align: center;
+}
+
+.subscribe {
+    color: black;
+    padding: 5px;
+}
+
+.newsletter-submit {
+    background-color: orangered;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 0.5rem 1rem;
+    margin-top: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:active {
+    color: green;
+}
+
+a:focus {
+    color: red;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+/* tablet screen size */
+@media only screen and (max-width: 1080px) {
+    #nav-menu {
+        padding: 12px;
+        font-size: 19px;
+        letter-spacing: 0px;
+        word-spacing: 0px;
+        font-weight: 700;
+    }
+
+    #footerlist {
+        margin-top: 0;
+        text-align: left;
+        margin-left: 0px;
+    }
+}
+
+/* Smaller tablet screen size */
+@media only screen and (max-width: 930px) {
+    #nav-menu ul {
+        flex-direction: column;
+        line-height: 30px;
+        margin-left: 30px;
+        font-size: 20px;
+        letter-spacing: 1px;
+        word-spacing: 1px;
+        padding: 5px;
+    }
+
+    #nav-menu {
+        position: relative;
+        width: 100%;
+        text-align: center;
+    }
+
+    #logo {
+        width: 300px;
+        height: 170px;
+    }
+
+    .col-6 {
+        width: 30%;
+        font-size: 17px;
+    }
+
+    .newsletter-signup {
+        width: 250px;
+    }
+}
+
+/* Larger devices and phones */
+@media only screen and (max-width: 750px) {
+    .header {
+        background-color: white;
+        display: inline-block;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #nav-menu {
+        display: none;
+        width: auto;
+        border-radius: 0 0 0 0px;
+    }
+
+    .btn {
+        display: inline-block;
+        border-radius: 0 0 0 0px;
+    }
+
+    #logo {
+        margin-left: 50px;
+    }
+}
+
+/* smaller devices and phones/ mobile */
+@media only screen and (max-width: 560px) {
+    #footerlist {
+        margin-top: 0;
+        text-align: center;
+        margin-left: 30px;
+    }
+
+    .newsletter-signup {
+        display: none;
+    }
+
+    .col-6 {
+        width: 400px;
+        text-align: center;
+    }
+
+    .row {
+        display: block;
+        margin-left: 40px;
+    }
+}
+

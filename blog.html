@@ -1,0 +1,77 @@
+﻿<!--
+   blog.html
+   Author: Jaime Rump
+   Date:  2023-02-28
+
+-->
+
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="This is the blog webpage where clients can look to find additional information. ">
+    <title>Blog </title>
+    <link href="blog-style.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/094a5bc91d.js" crossorigin="anonymous"></script>
+    <script src="function.js" defer></script>
+</head>
+<body>
+    <div id="header">
+        <a href="index.html"> <img id="logo" src="My Project.png" alt="logo" width="360" height="200" /></a>
+        <button class="btn" onclick="myFunction()"><i class="fas fa-bars"></i></button>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="cross-reference.html" id="r">Cross References</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="animate">
+        <h3> Resources</h3>
+    </div>
+    <div class="grid-container">
+        <div class="grid-item">
+            <img id="image1" src="blog1-image.jpg" alt="logo" width="360" height="200" />
+            <h2> 7 Small Ways to Be a More Inclusive Colleague</h2>
+            <p> by Nikita and Grace Lordan </p>
+            <button id="more" onclick="redirect1()"> Read More</button>
+        </div>
+        <div class="grid-item">
+            <img id="image2" src="blog2-image.jfif" alt="logo" width="360" height="200" />
+            <h2> Do Public Statements About Social Injustices Work as Intended? </h2>
+            <p> by Matt Gonzales </p>
+            <button id="more" onclick="redirect2()"> Read More</button>
+        </div>
+        <div class="grid-item">
+            <img id="image3" src="blog3-image.jpg" alt="logo" width="360" height="200" />
+            <h2> Diversity and Inclusion in Canadian workplaces</h2>
+            <p> by Johnny Zhang and Radhika Panjwani  </p>
+            <button id="more" onclick="redirect3()"> Read More</button>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="row">
+            <div class="col-6">
+                <ul id="footerlist">
+                    <li><a href="about.html"> ABOUT </a></li>
+                    <li><a href="contact.html"> CONTACT US </a></li>
+                    <li><a href="reviews.html">SUBMIT REVIEW</a></li>
+                    <li><a href="privacy.html"> PRIVACY POLICY </a></li>
+                    <li><a href="faq.html"> FAQ </a></li>
+                </ul>
+            </div>
+            <div class="col-6">
+                <p>&copy; 2023 Jenny Kucy Consulting. All rights reserved.</p>
+            </div>
+            <div class="newsletter-signup">
+                <a href="contact.html" class="subscribe">Sign up for our newsletter</a>
+                <input class="newsletter-input" type="email" id="email" placeholder="Enter your email address...">
+                <button class="newsletter-submit" type="submit">Subscribe</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

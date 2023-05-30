@@ -1,0 +1,129 @@
+﻿<!-- 
+   index.html
+   Author: Jaime Rump
+   Date:  2023-02-28
+
+-->
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="This is the home webpage (index) that displays who we are, what we offer and some testimonials.">
+    <title>Home</title>
+    <link href="style.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/094a5bc91d.js" crossorigin="anonymous"></script>
+    <script src="function.js" defer></script>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html"> <img id="logo" src="My Project.png" alt="logo" width="360" height="200" /></a>
+        <button class="btn" onclick="myFunction()"><i class="fas fa-bars"></i></button>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="cross-reference.html" id="r">Cross References</a></li>
+            </ul>
+        </nav>
+        <p id="date">  </p>
+    </div>
+    <div id="aboutus">
+        <div class="container">
+            <p id="whoTitle">Who We Are</p>
+            <img id="shape" src="shape.png" alt="shape" width="500" height="300" />
+
+            <ul id="about">
+                <li id="aboutlist"> Dedicated team of professionals helping to foster an environment that values the unique perspectives of their employees and customers.  </li>
+                <li id="aboutlist"> Tailored solutions designed to embrace diversity and inclusivity, promote equity and belonging, and achieve their business goals. </li>
+                <li id="aboutlist"> We believe that diversity and inclusivity are not just buzzwords, but key components of a successful and sustainable business model. </li>
+            </ul>
+        </div>
+        <div>
+            <img id="picture" src="pexels-jopwell-2422287_2.jpg" alt="Image of girl and coffee" width="250" height="200" />
+        </div>
+    </div>
+    <div class="grid-container">
+        <div class="grid-itemTitle">What We Offer</div>
+        <div class="grid-item">
+            <img id="icon1" src="icon1.png" alt="Training icon" width="80" height="80" />
+            <h3>Training</h3> <br />
+            <p class="aboutP">
+                <span class="drop-cap">W</span>e work with organizations to develop strategies to improve their diversity and inclusion efforts, and provide training to employees on topics such as
+                unconscious bias, cultural competence, and inclusive leadership.
+            </p>
+        </div>
+        <div class="grid-item">
+            <img id="icon1" src="icon2.png" alt="Faciliation icon" width="80" height="80" />
+            <h3>Facilitation</h3> <br />
+            <p class="aboutP">
+                <span class="drop-cap">W</span>e facilitate discussions or workshops on diversity and inclusion topics for organizations or communities. This might include helping organizations or communities develop
+                action plans to promote greater diversity and inclusion.
+            </p>
+        </div>
+        <div class="grid-item">
+            <img id="icon1" src="icon3.png" alt="Mentorship icon" width="80" height="80" />
+            <h3>Mentorship</h3> <br />
+            <p class="aboutP">
+                <span class="drop-cap">W</span>e help individuals build their own cultural competencies, navigate complex social and cultural situations, and develop inclusive leadership skills.
+            </p>
+        </div>
+    </div>
+
+    <div id="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/4dS9H0q36LM?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <div id="customer-testimonials">
+        <img id="background" src="pexels-steve-johnson-1109354.jpg" alt="Background image" />
+        <h4 id="array"> Total reviews: 3 </h4>
+        <div id="testimonial-slider">
+            <h2 class="testTitle"> Client Testimonials </h2>
+            <div class="testimonial">
+                <p class="testimonial-text">
+                    &quotWorking with Jenny Kucy Consulting has been a game-changer for our company. They helped us create a more inclusive and welcoming workplace culture that not
+                    only benefits our employees, but also our bottom line. I highly recommend their services to any organization looking to prioritize diversity and inclusivity.&quot
+                </p>
+                <p class="testimonial-author"> - John Doe</p>
+            </div>
+            <div class="testimonial">
+                <p class="testimonial-text">
+                    &quotAs a small business owner, I was hesitant to invest in diversity and inclusivity consulting. But after seeing the positive impact that Jenny Kucy Consulting
+                    had on my team and our customers, I can confidently say it was one of the best decisions I've made for my company. Their approach is thoughtful, collaborative, and effective.&quot
+                </p>
+                <p class="testimonial-author"> - Jane Doe</p>
+            </div>
+            <div class="testimonial">
+                <p class="testimonial-text">
+                    &quotI've worked with several diversity and inclusivity consultants in the past, but none have been as knowledgeable, passionate, and effective as Jenny Kucy Consulting.
+                    They helped us identify blind spots and biases within our organization, and provided practical tools and strategies to create a more equitable and inclusive workplace. I can't recommend them enough!&quot
+                </p>
+                <p class="testimonial-author"> - John Smith</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-container">
+        <div class="row">
+            <div class="col-6">
+                <ul id="footerlist">
+                    <li><a href="about.html"> ABOUT </a></li>
+                    <li><a href="contact.html"> CONTACT US </a></li>
+                    <li><a href="reviews.html">SUBMIT REVIEW</a></li>
+                    <li><a href="privacy.html"> PRIVACY POLICY </a></li>
+                    <li><a href="faq.html"> FAQ </a></li>
+                </ul>
+            </div>
+            <div class="col-6">
+                <p>&copy; 2023 Jenny Kucy Consulting. All rights reserved.</p>
+                <p>Last Modified: <span id="lastModified"></span></p>
+            </div>
+            <div class="newsletter-signup">
+                <a href="contact.html" class="subscribe">Sign up for our newsletter</a>
+                <input class="newsletter-input" type="email" id="email" placeholder="Enter your email address...">
+                <button class="newsletter-submit" type="submit">Subscribe</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

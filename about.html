@@ -1,0 +1,76 @@
+﻿<!--
+   about.html
+   Author: Jaime Rump
+   Date:  2023-02-28
+
+-->
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="This is the about page where clients can learn more about our business. ">
+    <title>About </title>
+    <script src="https://kit.fontawesome.com/094a5bc91d.js" crossorigin="anonymous"></script>
+    <link href="about-style.css" rel="stylesheet" />
+    <script src="function.js" defer></script>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html"> <img id="logo" src="My Project.png" alt="logo" width="360" height="200" /></a>
+        <button class="btn" onclick="myFunction()"><i class="fas fa-bars"></i></button>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="cross-reference.html" id="r">Cross References</a></li>
+            </ul>
+        </nav>
+    </div>
+    <h3> About Us</h3>
+    <div class="about">
+        <p>
+            At Jenny Kucy Consulting, we believe that diversity is a strength, and inclusivity is a necessity.
+            We work with organizations of all sizes to create more diverse and inclusive workplaces where everyone can thrive.
+            Our team of expert consultants brings a wealth of experience and knowledge to help our clients identify areas of
+            improvement and develop customized strategies to promote diversity and inclusivity.
+        </p>
+        <p>
+            We are passionate about creating positive change and believe that every organization has the
+            potential to become more inclusive. We work closely with our clients to understand their unique challenges and goals,
+            and offer practical solutions to help them achieve their objectives.
+        </p>
+        <p>
+            We take a data-driven approach to our work, leveraging the latest research and insights to inform our strategies.
+            We also prioritize collaboration and transparency, working closely with our clients every step of the way to ensure
+            that their needs and objectives are met.
+        </p>
+        <p>
+            At Jenny Kucy Consulting, we are committed to building a more inclusive world, one workplace at a time. Contact us today to
+            learn more about how we can help your organization achieve its diversity and inclusivity goals.
+        </p>
+    </div>
+    <div class="footer-container">
+        <div class="row">
+            <div class="col-6">
+                <ul id="footerlist">
+                    <li><a href="about.html"> ABOUT </a></li>
+                    <li><a href="contact.html"> CONTACT US </a></li>
+                    <li><a href="reviews.html">SUBMIT REVIEW</a></li>
+                    <li><a href="privacy.html"> PRIVACY POLICY </a></li>
+                    <li><a href="faq.html"> FAQ </a></li>
+                </ul>
+            </div>
+            <div class="col-6">
+                <p>&copy; 2023 Jenny Kucy Consulting. All rights reserved.</p>
+            </div>
+            <div class="newsletter-signup">
+                <a href="contact.html" class="subscribe">Sign up for our newsletter</a>
+                <input class="newsletter-input" type="email" id="email" placeholder="Enter your email address...">
+                <button class="newsletter-submit" type="submit">Subscribe</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

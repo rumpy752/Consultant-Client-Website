@@ -1,0 +1,80 @@
+﻿<!--
+   faq.html
+   Author: Jaime Rump
+   Date:  2023-02-28
+
+-->
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="This is the FAQ webpage where clients can find information to frequently asked questions. ">
+    <title>FAQ</title>
+    <link href="faq-style.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/094a5bc91d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html"> <img id="logo" src="My Project.png" alt="logo" width="360" height="200" /></a>
+        <button class="btn" id="cr-button" onclick="myFunction()"><i class="fas fa-bars"></i></button>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="cross-reference.html" id="r">Cross References</a></li>
+            </ul>
+        </nav>
+    </div>
+    <h3> FAQ </h3>
+    <div class="qanda">
+        <h4> Q: What is diversity and inclusion consulting?</h4>
+        <p id="cross-reference-p">
+            A: Diversity and inclusion consulting is a service that helps organizations create an inclusive work environment that values and respects diversity.
+            The consultant works with the organization to identify areas where diversity and inclusion can be improved, and then develops a plan to address those issues.
+        </p>
+        <h4> Q: Why is diversity and inclusion important?</h4>
+        <p>
+            A: Diversity and inclusion are important because they help create a more equitable and fair workplace. Studies have shown that organizations that embrace diversity
+            and inclusion are more innovative, productive, and profitable. Additionally, creating a diverse and inclusive workplace can help attract and retain top talent from a variety of backgrounds.
+        </p>
+        <h4> Q: What services do diversity and inclusion consultants offer?</h4>
+        <p>
+            A: Diversity and inclusion consultants offer a range of services to help organizations become more diverse and inclusive. These services may include: training and education programs, assessments
+            and audits, policy development, strategic planning, coaching and mentoring, and more.
+        </p>
+        <h4> Q:  How long does it take to see results from diversity and inclusion consulting?</h4>
+        <p>
+            A: The length of time it takes to see results from diversity and inclusion consulting will depend on a variety of factors, including the current state of the organization, the specific issues
+            being addressed, and the scope of the project. However, many organizations begin to see positive changes within a few months of working with a diversity and inclusion consultant.
+        </p>
+        <h4>  Q: How much does diversity and inclusion consulting cost?</h4>
+        <p>
+            A: The cost of diversity and inclusion consulting will vary depending on a number of factors, including the size of the organization, the scope of the project, and the experience and qualifications
+            of the consultant. However, many consultants offer a range of pricing options, from hourly rates to project-based fees, to make their services more accessible to a wide range of organizations.
+        </p>
+    </div>    
+    <div class="footer-container">
+        <div class="row">
+            <div class="col-6">
+                <ul id="footerlist">
+                    <li><a href="about.html"> ABOUT </a></li>
+                    <li><a href="contact.html"> CONTACT US </a></li>
+                    <li><a href="reviews.html">SUBMIT REVIEW</a></li>
+                    <li><a href="privacy.html"> PRIVACY POLICY </a></li>
+                    <li><a href="faq.html"> FAQ </a></li>
+                </ul>
+            </div>
+            <div class="col-6">
+                <p>&copy; 2023 Jenny Kucy Consulting. All rights reserved.</p>
+            </div>
+            <div class="newsletter-signup">
+                <a href="contact.html" class="subscribe">Sign up for our newsletter</a>
+                <input class="newsletter-input" type="email" id="email" placeholder="Enter your email address...">
+                <button class="newsletter-submit" type="submit">Subscribe</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+﻿/*
+   Style Sheet CSS for Cross Reference
+   Author: Jaime Rump
+   Date:  2023-02-28  
+
+   Filename: CRstyle.css
+*/
+
+h1, h3 {
+    text-align: center;
+
+}
+
+li.indented {
+    margin-left: 20px;
+}
+
+div.indented {
+    margin-left: 20px;
+    line-height: 25px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* 2 columns with equal width */
+    background-color: #2196F3;
+    padding: 5px;
+    width: auto;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 0px;
+    font-size: 15px;
+    text-align: left;
+    line-height: 24px;
+}
+
+.resources {
+    margin-left: 20px;
+}
+
+#title {
+    list-style: none;
+    font-weight: bold;
+}
+
+a:visited {
+    color: orangered;
+    text-decoration: none;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+#link {
+    font-size: 20px;
+    color: black;
+    margin-left: 10px;
+}
+
